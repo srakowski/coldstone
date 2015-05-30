@@ -5,11 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coldstone", "Coldstone\Coldstone.csproj", "{CBC3B215-4D05-4B71-9E65-BC3149D278BB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{0F907FFC-93FA-48EF-9C46-E78EA2B2DD7E}"
-	ProjectSection(SolutionItems) = preProject
-		coldstone.js = coldstone.js
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
