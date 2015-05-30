@@ -15,7 +15,6 @@ namespace Coldstone
 
         public Task<object> Initialize(dynamic obj)
         {
-            Debugger.Launch();
             AppDomain currentDomain = AppDomain.CurrentDomain;
             currentDomain.AssemblyResolve += new ResolveEventHandler(LoadFromSameFolder);
             return SyncTask(() =>
