@@ -39,7 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BindingEngine.cs" />
+    <Compile Include="BinderCore.cs" />
+    <Compile Include="EdgeBinder.cs" />
+    <Compile Include="EdgeResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel.cs" />
     <Compile Include="ViewModelRepository.cs" />

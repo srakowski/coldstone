@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coldstone Example</title>
+</head>
+<body>
+    <div id="app">
+        <div data-bind="with: Adder">
+            <label>Number1: <input type="number" data-bind="value: InNumber1" /></label><br />
+            <br />
+            <label>Number2: <input type="number" data-bind="value: InNumber2" /></label><br />
+            <br />
+            <button data-bind="command: AddCommand" />Add</button><br />
+            <br />
+            Output: <span data-bind="text: OutNumber"></span>
+        </div>
+    </div>
+    <!--<button id="load">Load</button>-->
+    <script>
+        //document.getElementById("load").addEventListener("click", function () {
+        //    debugger;
+            var Coldstone = require(__dirname + '\\coldstone.js');
+            var cs = new Coldstone(__dirname + "\\Coldstone.Example.dll");
+            cs.bind("app", "Coldstone.Example.App");
+        //});
+    </script>
+</body>
+</html>

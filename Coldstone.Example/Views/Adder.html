@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Coldstone Example</title>
-</head>
-<body>
+﻿<script type="text/html">
     <div id="adder">
         <label>Number1: <input type="number" data-bind="value: InNumber1" /></label><br />
         <br />
@@ -13,13 +8,4 @@
         <br />
         Output: <span data-bind="text: OutNumber"></span>
     </div>
-    <div id="output-text"></div>
-    <script>
-
-        var Coldstone = require(__dirname + '\\coldstone.js');
-        var cs = new Coldstone(__dirname + "\\Coldstone.Example.dll");
-        cs.bind("adder", "Coldstone.Example.ViewModels.AdderViewModel");
-
-    </script>
-</body>
-</html>
+</script>

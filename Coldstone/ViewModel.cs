@@ -59,6 +59,12 @@ namespace Coldstone
             methodInfo.Invoke(command, new object[] { null });
         }
 
+        public ViewModel GetPropertyAsViewModel(string propertyName)
+        {
+            var propInfo = _instanceType.GetProperty(propertyName);
+            return new ViewModel(propInfo.GetValue(_instance));
+        }
+
         public void Bind(string propertName, Func<object, Task<object>> callback)
         {
             if (!_capturePropertyChangedEvents)

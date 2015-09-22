@@ -27,6 +27,16 @@ namespace Coldstone
             return vm;
         }
 
+        public bool Contains(string id)
+        {
+            return GetViewModel(id) != null;
+        }
+
+        public void Add(ViewModel vm)
+        {
+            _viewModels[vm.GetHashCode().ToString()] = vm;
+        }
+
         public ViewModel GetViewModel(string id)
         {
             if (!_viewModels.ContainsKey(id))
