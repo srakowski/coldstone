@@ -1,3 +1,7 @@
 /Coldstone/bin
 /Coldstone/obj
+/Coldstone.Example/bin
+/Coldstone.Example/obj
 Coldstone.v12.suo
+/packages
+/.vs
