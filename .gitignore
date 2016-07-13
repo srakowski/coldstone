@@ -5,3 +5,5 @@
 Coldstone.v12.suo
 /packages
 /.vs
+/npm-debug.log
+/Coldstone.Example/node_modules

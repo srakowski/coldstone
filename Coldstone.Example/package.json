@@ -4,6 +4,6 @@
   "main": "main.js",
   "dependencies": {
     "electron-edge": "latest",
-    "electron-prebuilt" : "0.30.5"
+    "electron-prebuilt" : "latest"
   }
 }

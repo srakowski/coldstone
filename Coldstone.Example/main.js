@@ -1,5 +1,6 @@
-var app = require('app');
-var BrowserWindow = require('browser-window');
+var electron = require('electron');
+var app = electron.app;
+var BrowserWindow = electron.BrowserWindow;
 
 var mainWindow = null;
 
@@ -11,7 +12,7 @@ app.on('window-all-closed', function () {
 app.on('ready', function () {
     mainWindow = new BrowserWindow({ width: 1024, height: 768 });
     mainWindow.setMenu(null);
-    mainWindow.loadUrl('file://' + __dirname + '/app.html');
+    mainWindow.loadURL('file://' + __dirname + '/app.html');
     mainWindow.openDevTools();
     mainWindow.on('closed', function () {
         mainWindow = null;
